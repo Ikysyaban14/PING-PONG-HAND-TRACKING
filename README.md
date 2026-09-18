@@ -1,34 +1,52 @@
-# Pong Hand Tracking
+# 🏓 Pong Hand Tracking
 
-Game Pong 2D klasik yang dikendalikan menggunakan hand tracking melalui webcam laptop.
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge&logo=google&logoColor=white)
+![Pygame](https://img.shields.io/badge/Pygame-Green?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-## Teknologi
+Game **Pong 2D klasik** interaktif yang dikendalikan menggunakan gerakan tangan (*hand tracking*) secara *real-time* melalui *webcam* laptop tanpa butuh pengontrol tambahan[cite: 1].
 
-- Python 3
-- OpenCV
-- MediaPipe
-- Pygame
+---
 
-## Fitur
+## 💡 Demo Preview
 
-- Control paddle pemain dengan gerakan tangan
-- AI sederhana untuk lawan
-- Bola dan fisika Pong
-- Sistem skor
-- Status deteksi tangan: YES / NO
-- Tampilan landmark tangan di jendela webcam
+> *Tambahkan file GIF/Screenshot gameplay kamu di folder assets/ lalu aktifkan baris berikut:*  
+> `![Demo Preview](assets/demo.gif)`
 
-## Struktur Project
+---
+
+## ✨ Fitur Utama
+
+- ✋ **Hand Motion Control:** Kendalikan *paddle* pemain hanya dengan menggerakkan jari telunjuk ke atas dan bawah[cite: 1].
+- 🤖 **Smart AI Opponent:** Lawan komputer dengan pergerakan responsif[cite: 1].
+- 🎯 **Real-time Detection:** Visualisasi titik *landmark* tangan pada jendela *webcam*[cite: 1].
+- 📊 **HUD & Status Indicator:** Menampilkan skor pertandingan dan status deteksi tangan (`YES / NO`) secara *live*[cite: 1].
+- ⚙️ **Smooth Physics:** Logika pantulan bola dan sistem skor klasik khas Pong[cite: 1].
+
+---
+
+## 🛠️ Teknologi & Tools
+
+- **Python 3.12** — Bahasa pemrosesan utama.
+- **OpenCV** — Mengambil *feed* video dari webcam[cite: 1].
+- **MediaPipe Hands** — Pelacakan koordinat titik tangan secara presisi[cite: 1].
+- **Pygame** — *Engine* visualisasi dan logika game 2D[cite: 1].
+
+---
+
+## 📁 Struktur Proyek
 
 ```text
 pong-hand-tracking/
-├── .gitignore
-├── README.md
-├── hand_detector.py
-├── game_logic.py
-├── main.py
-├── requirements.txt
-└── .venv/   # dibuat lokal, tidak di-upload ke GitHub
+├── 📁 .venv/               # Virtual environment (Lokal)
+├── 📄 .gitignore           # File pengabaian Git
+├── 📄 README.md            # Dokumentasi proyek
+├── 📄 hand_detector.py     # Modul isolasi OpenCV & MediaPipe
+├── 📄 game_logic.py        # Modul engine Pygame & objek game
+├── 📄 main.py              # Entry point aplikasi
+└── 📄 requirements.txt     # Daftar dependency proyek
 ```
 
 ## Persyaratan
