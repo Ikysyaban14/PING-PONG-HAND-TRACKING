@@ -11,10 +11,8 @@ Game **Pong 2D klasik** interaktif yang dikendalikan menggunakan gerakan tangan 
 ---
 
 ## 💡 Demo Preview
-
-> *Tambahkan file GIF/Screenshot gameplay kamu di folder assets/ lalu aktifkan baris berikut:*  
-> `![Demo Preview](assets/demo.gif)`
-
+  
+> [Demo Preview](assets/demo.png)
 ---
 
 ## ✨ Fitur Utama
